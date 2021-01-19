@@ -3,27 +3,36 @@ require 'yaml'
 require 'optparse'
 
 ConvTable = {
+  # Physical Review
   "Physical Review"   => "Phys. Rev." ,
   "Physical Review A" => "Phys. Rev. A.",
   "Physical Review B" => "Phys. Rev. B.",
   "Physical Review C" => "Phys. Rev. C.",
+  "Physical Review D" => "Phys. Rev. D.",
+  "Physical Review E" => "Phys. Rev. E.",
   "Physical Review Letters" => "Phys. Rev. Lett.",
 
+  # ACS
+  "Journal of the American Chemical Society" => "J. Am. Chem. Soc.",
+  "Journal of organometallic chemistry" => "J. Organomet. Chem.",
+  "Inorganic Chemistry" => "Inorg. Chem.",
   "The Journal of Physical Chemistry A" => "J. Phys. Chem. A",
   "The Journal of Physical Chemistry B" => "J. Phys. Chem. B",
   "The Journal of Physical Chemistry C" => "J. Phys. Chem. C",
   "The Journal of Physical Chemistry Letters" => "J. Phys. Chem. Lett.",
+  "Chemical Reviews" => "Chem. Rev.",
 
-  "Journal of Applied Crystallography" => "J. Appl. Crystallogr.",
-  "Computational Materials Science" => "Comp. Mat. Sci.",
-  "Journal of Physics: Condensed Matter" => "J. Phys. Condens. Matter",
+  "Journal of Applied Crystallography"  => "J. Appl. Crystallogr.",
+  "Computational Materials Science"     => "Comp. Mat. Sci.",
+  "Journal of Physics: Condensed Matter"  => "J. Phys. Condens. Matter",
+  "Journal of Computational Chemistry"  => "J. Comput. Chem.",
+  "The Journal of Chemical Physics"     => "J. Chem. Phys",
 
   "Bulletin of the Chemical Society of Japan" => "Bull. Chem. Soc. Jpn.",
-  "Journal of the American Chemical Society" => "J. Am. Chem. Soc.",
-  "Journal of organometallic chemistry" => "J. Organomet. Chem.",
   "Russian Chemical Bulletin" => "Russ. Chem. Bull",
   "Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials" => "Acta Crystallogr., Sect B: Struct. Sci., Cryst. Eng. Mater."
 }
+
 
 def convert(filename, convert_table, case_sensitive = true)
   b = BibTeX.open(filename)
@@ -34,10 +43,10 @@ def convert(filename, convert_table, case_sensitive = true)
       if convert_table.has_key?(item.journal)
         item.journal = convert_table[item.journal]
       else
-        STDERR.puts "*** #{item.key} * '#{item.journal}' not found"
+        STDERR.puts "warning: #{item.key} * '#{item.journal}' not found"
       end
     else  # Not article
-      STDERR.puts "*** #{item.key} : skip (not @article) "
+      STDERR.puts "warning: #{item.key} : skip (not @article) "
     end
 
     puts item
