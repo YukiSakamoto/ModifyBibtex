@@ -30,7 +30,9 @@ ConvTable = {
 
   "Bulletin of the Chemical Society of Japan" => "Bull. Chem. Soc. Jpn.",
   "Russian Chemical Bulletin" => "Russ. Chem. Bull",
-  "Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials" => "Acta Crystallogr., Sect B: Struct. Sci., Cryst. Eng. Mater."
+  "Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials" => "Acta Crystallogr., Sect B: Struct. Sci., Cryst. Eng. Mater.",
+
+  "Coordination Chemistry Reviews" => "Coord. Chem. Rev.",
 }
 
 
