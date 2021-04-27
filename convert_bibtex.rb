@@ -16,6 +16,7 @@ ConvTable = {
   "Journal of the American Chemical Society" => "J. Am. Chem. Soc.",
   "Journal of organometallic chemistry" => "J. Organomet. Chem.",
   "Inorganic Chemistry" => "Inorg. Chem.",
+  "Chemistry of Materials" => "Chem. Mater.",
   "The Journal of Physical Chemistry A" => "J. Phys. Chem. A",
   "The Journal of Physical Chemistry B" => "J. Phys. Chem. B",
   "The Journal of Physical Chemistry C" => "J. Phys. Chem. C",
@@ -27,10 +28,12 @@ ConvTable = {
   "Journal of Physics: Condensed Matter"  => "J. Phys. Condens. Matter",
   "Journal of Computational Chemistry"  => "J. Comput. Chem.",
   "The Journal of Chemical Physics"     => "J. Chem. Phys",
+  "International Journal of Quantum Chemistry" => "Int. J. Quantum Chem.",
 
   "Bulletin of the Chemical Society of Japan" => "Bull. Chem. Soc. Jpn.",
   "Russian Chemical Bulletin" => "Russ. Chem. Bull",
   "Acta Crystallographica Section B: Structural Science, Crystal Engineering and Materials" => "Acta Crystallogr., Sect B: Struct. Sci., Cryst. Eng. Mater.",
+  "Acta Crystallographica Section B: Structural Crystallography and Crystal Chemistry" => "Acta Crystallogr. B Struct. Cryst. Cryst. Chem.",
 
   "Coordination Chemistry Reviews" => "Coord. Chem. Rev.",
 }
