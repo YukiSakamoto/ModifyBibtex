@@ -33,6 +33,7 @@ ConvTable = {
 
   # nature and science
   "Nature Photonics" => "Nat. Photonics",
+  "Nature Communications" => "Nat. Commun.",
   "Nature" => "Nature",
   "Science" => "Science",
 
