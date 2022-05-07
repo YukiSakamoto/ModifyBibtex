@@ -30,6 +30,7 @@ ConvTable = {
   # Elsevier
   "Chemical Physics Letters" => "Chem. Phys. Lett.",
   "Computer Physics Communications" => "Comput. Phys. Commun.",
+  "Surface Science" => "Surf. Sci.",
 
   # nature and science
   "Nature Photonics" => "Nat. Photonics",
@@ -48,7 +49,10 @@ ConvTable = {
   "Nanomaterials" => "Nanomaterials",
   "Sensors and Actuators B: Chemical" => "Sens. Actuators B Chem.",
   "Sensors and Actuators" => "Sens. Actuators",
-  "Journal of Electroanalytical Chemistry and Interfacial Electrochemistry" => "J. Electroanal. Chem. Interf. Electrochem.", "Journal of the Optical Society of America" => "J. Opt. Soc. Am.", "The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science" => "London, Edinburgh Dublin Philos. Mag. J. Sci.", "Zeitschrift für Physik A Hadrons and nuclei" => "Z. Phys. A",
+  "Journal of Electroanalytical Chemistry and Interfacial Electrochemistry" => "J. Electroanal. Chem. Interf. Electrochem.", 
+  "Journal of the Optical Society of America" => "J. Opt. Soc. Am.", 
+  "The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science" => "London, Edinburgh Dublin Philos. Mag. J. Sci.", 
+  "Zeitschrift für Physik A Hadrons and nuclei" => "Z. Phys. A",
 
   "Applied Physics Letters"  => "Appl. Phys. Lett.",
   "Journal of Applied Crystallography"  => "J. Appl. Crystallogr.",
