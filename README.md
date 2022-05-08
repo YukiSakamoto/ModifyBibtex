@@ -8,7 +8,7 @@ To run this script, specify the .bib file.
 The script prints the result for the standard output (stdout).
 
 ```
-> ruby convert ref_dft.bib > ref_abbr.bib
+> ruby convert_bibtex.rb ref_dft.bib > ref_abbr.bib
 ```
 
 * before
